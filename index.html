@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+	body, html {
+		height: 100%; /* Ensure the body and html take up the full height */
+		margin: 0; /* Remove default margin */
+		padding:0; /*Remove bottom space*/
+		display: flex; /* Enable flexbox */
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+		background-color: #F5D04E;}
+
+	.box {
+        background-color: white; /* Square background */
+        padding: 10px; /* Space inside the box */
+        border-radius: 10px; /* Optional: Rounded corners */
+        box-shadow: 8px 8px 0px rgba(0, 0, 0, 1); /*right bottom solid (solid)*/
+        display: flex;
+        flex-direction: column;}
+	
+	.highlight {
+		background-color: #F5D04E;
+		padding: 5px 10px 5px 10px; /* Add space inside the background */
+		display: inline-block; /* Wrap the background around the text */
+		border-radius: 5px; /* Optional: Rounded corners */
+        }
+		
+	img {
+		max-width: 100%; /* Optional: Make image responsive */
+		height: auto; /* Keep the aspect ratio */
+		border-radius: 10px;}
+		
+	.icon {
+		width: 20px; 
+		height: 20px; 
+		margin-right: 10px; /* Space between the icon and the text */
+		vertical-align: middle; /* Aligns the image vertically with the text */}	
+	
+	h5 { 		
+		font-size: 14px; 
+		text-align: left;
+		margin-top: 10px; /* Add space between the image and the text */
+		max-width: 270px; /* Optional: Limit the maximum width of the text */
+        word-wrap: break-word; /* Allow text to wrap within container */
+		margin-bottom: 5px;}
+		
+	h2 { 
+		font-size: 20px; 
+		text-align: left;
+		margin-top: 10px; /* Add space between the image and the text */
+		max-width: 270px; /* Optional: Limit the maximum width of the text */
+        word-wrap: break-word; /* Allow text to wrap within container */
+		margin-bottom: 5px;}		
+		
+	p { 		
+		font-size: 14px; 
+		text-align: left;
+		margin-top: 10px; /* Add space between the image and the text */
+		max-width: 270px; /* Optional: Limit the maximum width of the text */
+        word-wrap: break-word; /* Allow text to wrap within container */
+		margin-bottom: 5px;}
+  </style>
+</head>
+
+<body>
+	<div class="box">
+	  <img src="assets/images/illustration-article.svg" alt="My test image" style="width:270px;height:160px;" />
+	  <h5><span class="highlight">Learning</span></h5>
+	  <p>Published 21 Dec 2023</p>
+	  <h2>HTML & CSS foundations</h2>
+	  <p style="color:grey;">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <p><img src="assets/images/image-avatar.webp" alt="icon" class="icon">Greg Hooper</p>
+	</div>
+
+</body>
+</html>
